@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Extra Income - Ben's Honey Distributor Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#216943',
+                        accent: '#A8CD87',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-primary text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="media/logo.png" alt="Caribbean Nectars Logo" class="h-16 md:h-24 w-auto md:w-[196px] object-contain">
+            </a>
+            <div id="desktop-nav" class="hidden md:block space-x-6">
+                <a href="index.html" class="hover:bg-accent hover:text-primary px-3 py-1 rounded font-semibold text-lg md:text-[21px] transition-colors">Home</a>
+                <a href="earn.html" class="hover:bg-accent hover:text-primary px-3 py-1 rounded font-semibold text-lg md:text-[21px] transition-colors">Earn Extra Income</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none" onclick="toggleMenu()">
+                <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3 pb-2">
+            <a href="index.html" class="block hover:bg-accent hover:text-primary px-3 py-2 rounded font-semibold text-lg transition-colors">Home</a>
+            <a href="earn.html" class="block hover:bg-accent hover:text-primary px-3 py-2 rounded font-semibold text-lg transition-colors">Earn Extra Income</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-primary to-accent text-white py-12 md:py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl md:text-5xl font-extrabold mb-4">Turn Your Vehicle Into a Revenue Stream</h1>
+            <p class="text-base md:text-2xl">Partner with Ben's Honey as an Independent Distributor. Set your own pace, manage your own route, and earn competitive commissions.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- Why Partner Section -->
+        <section class="mb-16 bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Why Partner with Ben's Honey?</h2>
+            <p class="text-base md:text-lg text-center max-w-3xl mx-auto mb-8 italic">
+                "We aren't looking for employees; we are looking for partners. As an Independent Distributor, you are the boss of your territory. We provide the premium product—you provide the drive."
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-accent bg-opacity-20 p-6 rounded-xl text-center border-t-4 border-primary">
+                    <div class="text-4xl mb-4">🍯</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">High Demand Product</h3>
+                    <p>Sell "Liquid Gold." Ben's Honey is a trusted local brand with a growing customer base.</p>
+                </div>
+                <div class="bg-accent bg-opacity-20 p-6 rounded-xl text-center border-t-4 border-primary">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">Immediate Earnings</h3>
+                    <p>Competitive commission structure. You earn on every bottle sold.</p>
+                </div>
+                <div class="bg-accent bg-opacity-20 p-6 rounded-xl text-center border-t-4 border-primary">
+                    <div class="text-4xl mb-4">🕐</div>
+                    <h3 class="font-bold text-xl mb-2 text-primary">Total Flexibility</h3>
+                    <p>You choose your hours. Perfect for gig-workers, freelancers, or anyone with a vehicle looking to maximize their time on the road.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section class="mb-16 bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">Do You Fit the Profile?</h2>
+            <p class="text-base md:text-lg text-center mb-6">To ensure success, we have strict requirements for our partners. Please only apply if you meet all the following criteria:</p>
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="flex items-start bg-accent bg-opacity-20 p-4 rounded-xl">
+                    <span class="text-2xl mr-4">🚗</span>
+                    <div>
+                        <h4 class="font-bold text-primary">Transportation</h4>
+                        <p>You must own a reliable vehicle and have a valid Driver's Permit.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-accent bg-opacity-20 p-4 rounded-xl">
+                    <span class="text-2xl mr-4">📱</span>
+                    <div>
+                        <h4 class="font-bold text-primary">Tech-Savvy</h4>
+                        <p>You must be comfortable using WhatsApp for Business, Google Maps, and digital forms.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-accent bg-opacity-20 p-4 rounded-xl">
+                    <span class="text-2xl mr-4">🏦</span>
+                    <div>
+                        <h4 class="font-bold text-primary">Bank Ready</h4>
+                        <p>You must have active Online Banking (Endcash or Bank Transfer) for seamless transactions.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-accent bg-opacity-20 p-4 rounded-xl">
+                    <span class="text-2xl mr-4">✅</span>
+                    <div>
+                        <h4 class="font-bold text-primary">Trustworthy</h4>
+                        <p>You must provide a Certificate of Character (or proof of application receipt) to handle stock.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruiting Areas Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">Now Recruiting in These Areas</h2>
+            <p class="text-base md:text-lg text-center mb-8">We are specifically looking to unlock distribution in the following communities. If you live in or near these areas, we want to hear from you.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                    <h3 class="font-bold text-xl text-primary mb-2">West</h3>
+                    <p>Diego Martin, Petit Valley</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                    <h3 class="font-bold text-xl text-primary mb-2">East</h3>
+                    <p>Arima, Sangre Grande</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                    <h3 class="font-bold text-xl text-primary mb-2">Central</h3>
+                    <p>Chaguanas, Cunupia</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer">
+                    <h3 class="font-bold text-xl text-primary mb-2">South</h3>
+                    <p>San Fernando, Princes Town, Williamsville, Point Fortin, La Brea, Penal, Fyzabad, Siparia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">How Do You Apply?</h2>
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg max-w-2xl mx-auto text-center border border-gray-100">
+                <p class="text-base md:text-lg mb-6">Send us your Certificate of Character (or proof of application receipt) along with your contact information to:</p>
+                <div class="space-y-4">
+                    <a href="mailto:Caribbean.nectars@gmail.com" 
+                       class="block bg-primary hover:bg-opacity-90 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-colors duration-300 shadow-lg">
+                        📧 Caribbean.nectars@gmail.com
+                    </a>
+                    <a href="https://wa.me/18687289484" 
+                       target="_blank"
+                       class="block bg-accent hover:bg-opacity-80 text-primary font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg md:text-xl transition-colors duration-300 shadow-lg">
+                        📱 WhatsApp: +1 (868) 728-9484
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="flex flex-col items-center justify-center">
+            <img src="media/logo.png" alt="Ben's Honey Logo" class="h-24 md:h-40 w-24 md:w-40 object-contain mb-4">
+            <p>&copy; 2026 Caribbean Nectars</p>
+            <p>All rights reserved.</p>
+            <p>Made by Aalon and Deklon Peters</p>
+            <p>Who is Pellau 🗑️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
